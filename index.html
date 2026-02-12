@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            
+        }
+        .container{
+           
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        .nav{
+            display: flex;
+            height: 45px;
+            background-color: rgba(253, 221, 16, 0.947);
+            border-top-left-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .buy{
+            color: black;
+            font-weight: 600;
+        }
+        .second{
+            height: 75px;
+            justify-content: space-between;
+            display: flex;
+            padding-left: 40px;
+            padding-right: 40px;
+            align-items: center;
+            gap: 50px;
+            background-color: rgba(128, 128, 128, 0.093);
+            margin-top: 20px;
+            margin-left: 90px;
+            margin-right: 90px;
+            border: 1px solid rgba(128, 128, 128, 0.303);
+            border-radius: 5px;
+        }
+        .ul{
+            display: flex;
+            gap: 45px;
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .download{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 120px;
+            background-color: rgba(238, 208, 13, 0.986);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        .down{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .img{
+            display: flex;
+        }
+        .english{
+            font-size: 15px; 
+            font-family: Georgia, 'Times New Roman', Times, serif;}
+        .search{
+            display: flex;
+            gap: 25px;
+            font-size: x-large;
+            justify-content: center;
+            align-items: center;
+        }
+        .home{
+            color: rgba(128, 128, 128, 0.519);
+            margin-left: 120px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: center;
+            margin-right:120px ;
+        }
+        .ultra{
+            font-weight: 600;
+        }
+        .new{
+            display: flex;
+            gap: 5px;
+            font-size: x-large;
+            color: black;
+            text-decoration: none;
+        }
+        .fourth-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        .heading-one{
+            font-size: 60px;
+        }
+        .ultraedit{
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+        .window{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 115px;
+            background-color: rgba(235, 206, 15, 0.756);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .first{
+            background-color: rgba(128, 128, 128, 0.105);
+            border-radius: 15px;
+            width: 350px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .butn1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .section{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+       }
+       .image{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        border-radius: 10px;
+       }
+       .image-two{
+        border-radius: 5px;
+        margin-bottom: none;
+       }
+       .custom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.078);
+        height: 100px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+       }
+       .bar{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width:800px;
+        height: 140px;
+        background-color: aquamarine;
+       }
+       .custom{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       div.custom:hover{
+        background-color: rgba(255, 255, 0, 0.564);
+       } 
+        .home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: black;
+        }
+        .ultra{
+            font-weight: 600;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .what{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+     
+        .code{
+            display: flex;
+            gap: 150px;
+            justify-content: center;
+            color: black;
+            
+        }
+        .code a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            margin-top: 50px;
+        }
+        .img-three{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .texts{
+            font-size: larger;
+        }
+        .ninth-section{
+            display: flex;
+            justify-content: center;
+            gap: 250px;
+            align-items: center;
+            height: 300px;
+            background-color: rgba(128, 128, 128, 0.114);
+            margin-top: 140px;
+        }
+        .whats-new{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 270px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 110px;
+            background-color: rgba(235, 206, 15, 0.678);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .head-one{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+       
+        .head-2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            font-size:35px ;
+        }
+       
+        .paragraph{
+            font-size: larger;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            width: 200px;
+        }
+        .bar-one{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .section-one{
+            display: flex;
+            gap: 180px;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar-two{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            width: 200px;
+            gap: 15px;
+        }
+        .img-sixth{
+            align-items: center;
+            width: 200px;
+            display: flex;
+            gap: 2px;
+            justify-content: center;
+            margin-right: 30px;
+        }
+        .bar-three{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 120px;
+            width: 250px;
+            gap: 15px;
+        }
+        .head{
+            font-size: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .strong{
+            font-weight: 600;
+            font-size: 38px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        }
+        .part-one{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            
+        }
+        div.part-one p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 450px;
+        }
+        .img-seven{
+            border-radius: 5px;
+        }
+        .portion-one{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        .last-portion{
+
+            background-color: rgba(128, 128, 128, 0.235);
+            padding-top: 30px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .features{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: larger;
+            margin-bottom: 50px;
+            font-size: 25px;
+        }
+        .feature{
+            display: flex;
+            justify-content: center;
+            font-size: 45px;
+            flex-wrap: wrap;
+        }
+        .footer{
+            padding: 20px 20px 10px 10px;
+            height: 50vh;
+            width: 90vw;
+            background-color: rgba(0, 0, 0, 0.819);
+            align-self: center;
+            align-self: center;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 15px;
+            gap: 80px;
+            color: white;
+            flex-wrap: wrap;
+
+        }
+        .last-image{
+            display: flex;
+            
+
+        }
+        .newsletter{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        input.email{
+            border-radius: 5px;
+            height: 2.3rem;
+            width: 16.5rem;
+            border: none;
+            background-color: rgba(161, 24, 24, 0.208);
+            position: relative;
+            padding-left: 10px;
+            
+        }
+        .email{
+            border-radius: 5px;
+            height: 2.3rem;
+            width: 17rem;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.208);
+            position: relative;
+        }
+        .subscribe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 33px;
+            width: 90px;
+            background-color: rgb(235, 206, 15);
+            border: none;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 1px;
+            margin-top: 3px;
+           
+        }
+        .foot{
+            display: flex;
+        }
+        .li{
+            color: white;
+        }
+        .bar-img{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            
+        }
+        .bar-paragraph{
+            font-size: large;
+            margin-top: 0;
+        }
+        .img-par-bar{
+            height: 30vh;
+            width: 90vw;
+            display: flex;
+            padding-left: 20px;
+            justify-content: space-between;
+            display: flex;
+            
+        }
+        .left-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+        .newsletter{
+            margin: 30px;
+        }
+        .bottom-left{
+            display: flex;
+            flex-direction: column;
+            width: 60vw;
+            flex-wrap: wrap;
+            
+        }
+        div.bottom-left h3{
+            margin: 0;
+        }
+        .paragraph-button{
+            display: flex;
+        }
+        .button-2{
+            display: flex;
+            margin-top: 10px;
+        }
+        .top-bar{
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            margin-right: 50px;
+            flex-wrap: wrap;
+        }
+        .company{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .company a{
+            color: rgb(192, 188, 188);
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+        .right-bar{
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        
+        }
+        .footer-one{
+            background-color: red;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .top-right{
+           display: flex;
+          flex-wrap: wrap;
+          margin-right: 50px;
+        }
+       .bottom-part{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+       }
+       .copy{
+        display: flex;
+        flex-direction: column;
+
+
+       }
+       .copy-2{
+        display: flex;
+        justify-content: end;
+        margin-top: 150px;
+        font-size: 18px;
+        color: rgba(128, 128, 128, 0.814);
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    
+        <div class="nav">
+        <p class="ue">UE Core & Enterprise Subscriptions: Get <strong>10% Off</strong> on your second year <a href="BuyNow" class="buy">Buy Now</a></p>
+        </div>
+
+        <div class="second">
+            <span class="ultra"><img decoding="async" width="170" height="60" src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png" alt="Site New Logo" title="UE_Site-Logo" srcset="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png 332w, https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo-300x117.png 300w" sizes="(max-width: 332px) 100vw, 332px" class="wp-image-40138"
+            ></span>
+
+            
+                <ul class="ul">
+                    <span class="ul">Product</span>
+                    <span class="ul">Buy</span>
+                    <span class="ul">Support</span>
+                    <span class="ul">Learn</span>
+                    <span class="ul">Company</span>
+                </ul>
+            
+            
+            <div class="down">
+            <a class="download">Download</a>
+            <div></div><img src="https://cdn-icons-png.flaticon.com/128/3019/3019021.png" alt="" height="20px">
+            <div class="search"><div><span class="english"> English</span></div>
+            <img src="https://cdn-icons-png.flaticon.com/128/9479/9479251.png" alt="" height="20px"></div>    
+        </div>
+ 
+    </div>
+    
+        <div class="home">
+            <h2>Home > <span class="ultra">Ultra Edit </span></h2>
+            <div class="new">
+                <a class="new" href="What's New">What's New|</a>
+                <a class="new" href="What's New">Full Feature List|</a>
+                <a class="new" href="What's New">Latest Changes</a>
+            </div>
+        </div>
+
+        <div class="fourth-section">
+            <h1 class="heading-one">If you need a text editor, you need UltraEdit.</h1>
+            <span class="ultraedit">UltraEdit is the most flexible, powerful, and secure text editor.</span>
+            <span class="ultraedit">Download a free, full-feature trial to see why. Available for Windows, Mac, and Linux.</span>
+        </div>
+
+        <div class="section">
+            <div class="first">
+                <div class="butn1"><span class="window"><h2><img src="https://cdn-icons-png.flaticon.com/128/2/2955.png" alt="" height="20px"> <span>Ultra</span>Edit </h2><span> for windows</span></span>
+                <button class="buttons">Download</button></div>
+            </div>
+            <div class="first">
+                <div class="butn1"><span class="window"><h2><img src="https://cdn-icons-png.flaticon.com/128/0/747.png" alt="" height="25px"> <span>Ultra</span>Edit </h2><span> for Mac</span></span>
+                <button class="buttons">Learn More</button></div>
+            </div>
+            <div class="first">
+                <div class="butn1"><span class="window"><h2><img src="https://cdn-icons-png.flaticon.com/128/1998/1998747.png" alt="" height="20px"> <span>Ultra</span>Edit </h2><span> for Linux</span></span>
+                <button class="buttons">Learn More</button></div>
+            </div>
+        </div>
+        <div class="image">
+        <img class="image-two" src="https://th.bing.com/th/id/OIF.u1JV0iti1RM2fZ4ygeFi9Q?w=304&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" height="550rem" width="1150rem">
+        </div>
+
+       
+        <div class="home">
+            <div class="custom">custom themes and layout</div>
+            <div class="custom">multi-caret editing, multi select & more</div>
+            <div class="custom">ulparalleled file search, in or across file</div>
+            <div class="custom">built in FTP,SSH and more developer features</div>
+            <div class="custom">includes Ultra Compare Professional for free</div>
+        </div>
+
+        <div class="what">
+        <h1>What can you use <span class="ultra">Ultra</span>Edit for</h1>
+        </div>
+
+        <div class="code">
+            <a id="anchor" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3597/3597088.png" class="img-three" width="50px" alt="">
+                <span class="texts">Text Code/</span>
+                <span class="texts">editing</span>
+            </a>
+              <a id="anchor" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3242/3242244.png" class="img-three"  width="50px" alt="">
+                <span class="texts">Web</span> 
+                <span class="texts">Development</span>
+            </a>
+             <a id="anchor" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/16631/16631894.png" class="img-three"  width="50" alt="">
+                <span class="texts">System</span>
+                <span class="texts">Administration</span>
+             <a id="anchor" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3121/3121784.png" class="img-three"  width="50" alt="">
+                <span class="texts">Power and</span>
+                <span class="texts">Performance</span>
+            </a>
+             <a id="anchor" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/711/711319.png" class="img-three"  width="50" alt="">
+                <span class="texts">File</span>
+                <span class="texts">compare</span>
+            </a>
+        </div>
+
+        <div class="ninth-section">
+            <div class="whats-new">
+                <h1 class="head-one">What's New</h1>
+                <p>UE 2025.2 refines your core workflows with improved EDI file handling and live regex feedback in Find and Replace. Small updates that you can feel the real difference.</p>
+                <button class="button">Learn More</button>
+            </div>
+            <div>
+                <abbr title="edi-functions-raw-to-unwrapped"><img src="https://images.pexels.com/photos/4383298/pexels-photo-4383298.jpeg" alt="" height="250px" width="500px"></abbr>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="head-2">Every UltraEdit license comes with</h2>
+        </div>
+
+
+    <div class="section-one">
+        <div class="bar-one">
+            <div class="img-sixth">
+            <img src="https://cdn-icons-png.flaticon.com/128/220/220781.png" alt="" height="50px">
+            <img src="https://cdn-icons-png.flaticon.com/128/0/747.png" alt="" height="50px">
+            <img src="https://cdn-icons-png.flaticon.com/128/13/13702.png" alt="" height="50px">
+            </div>
+            <div class="paragraph">You get the Windows, Mac, and Linux versions of UltraEdit and UltraCompare</div>
+        </div>
+        <div class="bar-two">
+            <div class="img-sixth">
+            <img src="https://cdn-icons-png.flaticon.com/128/5379/5379477.png" alt="" height="50">
+            </div>
+            <div class="paragraph">Includes free UltraCompare Pro diff tool</div>
+        </div>
+        <div class="bar-three">
+        <div class="img-sixth">
+            <img src="https://cdn-icons-png.flaticon.com/128/1055/1055329.png" alt="" height="50">
+            <img src="https://cdn-icons-png.flaticon.com/128/18887/18887773.png" alt="" height="50">
+            <img src="https://cdn-icons-png.flaticon.com/128/8960/8960663.png" alt="" height="50">
+        </div>
+        <div class="paragraph">You get the Windows, Mac, and Linux versions of UltraEdit and UltraCompare</div>  
+    </div>
+
+        </div>
+            <h2 class="head">Do more with an extensive list of <strong class="strong"> powerful features and functionalities</strong></h2>
+       
+    <div class="portion-one">
+        <div class="part-one">
+            <abbr title="intellitips.mp4"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/intellitips.mp4.gif" alt="" height="250px" width="450px"></abbr>
+            <h2>Dynamic code auto-completion with IntelliTips</h2>
+            <p>ntellitips provides code and context-aware auto-complete suggestions. This offers class members, functional tips, and intuitive prompts for most modern programming languages. The level of automation can be configured.</p>
+        </div>
+        <div class="part-one">
+            <abbr title="intellitips-1"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/intellitips-1.png" alt="" height="250px" width="450px"></abbr>
+            <h2>Multi-caret/multi-select</h2>
+            <p>One of the most powerful and intuitive multi-caret editing and multi-selection capabilities in the business. Once your cursors or selections are where you want them to be, you can copy, cut, paste, select and delete just the same as you normally would.</p>
+        </div>
+        <div class="part-one">
+            <abbr title="HTML markdown"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/HTML-Markdown.png" alt="" height="250px" width="450px"></abbr>
+            <h2>HTML / Markdown live preview</h2>
+            <p>Watch your HTML or Markdown pages rendered in real time with live preview—even as you edit them. Also comes with Github Flavored Markdown (GFM) code highlighting and compatibility.Double-click an element in the preview to jump to its definition in source</p>
+        </div>
+        <div class="part-one">
+            <abbr title="searcg-1"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Search-1.png" alt="" height="250px" width="450px"></abbr>
+            <h2>Search</h2>
+            <p>UltraEdit’s omniscient search can find files across folders and directories even on files as large as 4GB. Use various filters such as regular expressions to fine tune search</p>
+        </div>
+        <div class="part-one">
+            <abbr title="column-mode"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Column-mode.png" alt="" height="250px" width="450px"></abbr>
+            <h2>Column mode</h2>
+            <p>When editing horizontally just isn’t quite good enough, Column Mode is there for you. Use Column Mode to intuitively edit along the Y axis anywhere in your document. It’s just one of the many powerful ways UltraEdit helps you edit tabular data or code files.</p>
+        </div>
+        <div class="part-one">
+            <abbr title="integrated-FTP"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Integrated-FTP.png" alt="" height="250px" width="450px"></abbr>
+            <h2>Integrated FTP, SSH & Telnet</h2>
+            <p>Whether you need to make quick edits to a file on a server or upload a massive codebase, UltraEdit’s integrated FTP capabilities and SSH/Telnet make it easy to work with remote files and interact with servers from a single, powerful application.</p>
+        </div>
+        <div class="part-one">
+            <abbr title="customizeable-UI"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Customizable-UI.png" alt="" height="250px" width="450px"></abbr>
+            <h2>HTML / Markdown live preview</h2>
+            <p>The user interface has been built with customizability in mind.Our menu system has been rebuilt from the ground up to make it even more customizable than ever. Our deeply customizable new menu can be laid out however you’d like. Set yourself up with Ribbon mode for a familiar look and feel. Or maybe you prefer the simple toolbar with only your most commonly needed features. The possibilities are endless.</p>
+        </div>
+        <div class="part-one">
+            <abbr title="Themes(1)"><img class="img-seven" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Themes-1.png" alt="" height="250px" width="450px"></abbr>
+            <h2>Themes</h2>
+            <p>Themes allow users to configure UI systems, menu layouts, and colors.
+Choose from our core themes or from our user-contributed submissions to get UltraEdit exactly how you like it. Feel free to modify it too.</p>
+        </div>
+    </div>
+        
+        <div class="last-portion">
+            <h1 class="feature">Other Features</h1>
+        <div class="features">
+            <div>
+            <ul>
+                <li>Easily open and edit large files – 4 GB and beyond!</li>
+                <li>Multi-caret editing and multi-select</li>
+                <li>Column (block) mode editing</li>
+                <li>Powerful search: Find & replace in files, regular expressions, inverse search, etc.</li>
+                <li>File compare</li>
+                <li>Code syntax highlighting for nearlyany programming language</li>
+                <li>Code folding and hierarchical function listing</li>
+                <li>Beautify and reformat source code</li>
+                <li>Powerful XML handling: XML tree view, reformatting, validation, etc.</li>
+                <li>Auto-closing XML/HTML tags</li>
+                <li>Smart templates – automatic intelligent code completion</li>
+                <li>Editor themes – skin the entire app</li>
+                <li>Powerful and configurable tools</li>
+                <li>File and data sorting</li>
+            </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Integrated FTP client (supports FTP, SFTP, and FTPS)</li>
+                    <li>Integrated SSH/telnet client</li>
+                    <li>Filtered spell checker</li>
+                    <li>Unicode/UTF-8 support</li>
+                    <li>Split/duplicate window editing</li>
+                    <li>Hex editing</li>
+                    <li>Macros and scripts for automated editing</li>
+                    <li>CSV data reformatting</li>
+                    <li>Log file polling</li>
+                    <li>File encryption and decryption</li>
+                    <li>Integrated Ctags (symbols listing)</li>
+                    <li>Base64 encode/decode</li>
+                    <li>Project support</li>
+                    <li>Robust bookmarking</li>
+                    <li>Hundreds more features listed here</li>
+                </ul>
+            </div>
+        </div>
+  <div footer-one>
+        <div class="footer">
+            <div class="left-side">
+
+
+        <div class="top-bar">
+    <div class="img-par-bar">
+                <div class="bar-img">
+                    <img class="last-image" width="70" height="50" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2-1.svg" alt="">
+                    <h2>UltraEdit</h2>
+                    <p class="bar-paragraph">UltraEdit is the powerful text editor built for <br> developers, data wranglers, and IT pros handling <br> large files and complex tasks.</p>
+                </div>
+        <div class="top-right">
+            <div class="copy">
+            <div class="right-bar">
+                <div class="company">
+                    <h2>Company</h2>
+                    <a href="">About us</a>
+                    <a href="Contact us"></a>
+                </div>
+                <div class="company">
+                    <h2>Product</h2>
+                    <a href="">UltraEdit</a>
+                    <a href="">UltraCompare</a>
+                    <a href="">UltraFTP</a>
+                    <a href="">UEStudio</a>
+                    <a href="">All Products</a>
+                </div>
+                <div class="company">
+                    <h2>Support</h2>
+                    <a href="">Help Center</a>
+                    <a href="">Licensing & Activation</a>
+                    <a href="">File a Support Ticket</a>
+                    <a href="">Documentation</a>
+                    <a href="">Community Forums</a>
+                </div>
+                <div class="company">
+                    <h2>Legal</h2>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Refund Policy</a>
+                    <a href="">License Agreement</a>
+                </div>
+            </div>
+            <div>
+                <span class="copy-2" >&copy; Copyright 2026, All Rights Reserved</span>
+            </div>
+        </div>    
+        </div>
+
+
+    </div>
+            </div>
+        </div>
+        <div class="bottom-part">
+            <div class="newsletter">
+                <div class="bottom-left">
+                <h3>Newsletter Signup</h3>
+                <span>Stay updated on new features, tutorials, and exclusive offers.</span>
+                </div>
+
+            <div class="foot">
+                <div class="button-2">
+                <div class="email">
+                <input class="email" type="email" placeholder="email@email.com">
+                <button class="subscribe">Subscribe</button>    
+                </div>
+                
+                </div>
+                
+            </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+        </div>
+          
+    </div>
+    </div>
+    
+</body>
+</html>
